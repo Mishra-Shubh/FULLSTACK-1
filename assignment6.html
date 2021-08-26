@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #container
+        {
+            display: inline-flex;
+        }
+        .box
+        {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            overflow: hidden;
+            border: 2px solid white;
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        .box img{
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+        }
+        .box h2{
+            text-align: center;
+            margin: 10px;
+        }
+        .mybutton{
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius:10px;
+
+        }
+        .mybutton:hover{
+            background-color: blue;
+        }
+        /* anchor tag is inline margin padding doesnt work to use make display inline block  */
+    </style>
+</head>
+<h1 style="text-align: center; color: white;font-family: arial ; margin: 10px;">Practical 6: CREATE FOLLOWING LAYOUT USING FOLLOWING CSS PROPERTY</h1>
+<body style="background-color:grey;">
+<div id="container">
+    <div class="box" id="box1">
+    <!-- img tag is inline tag -->
+    <div class="img">
+        <img src="./assests/html6.JPG" alt="html-pic">
+    </div>
+    <h2>Introduction to HTML</h2>
+    <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.HTML was originally developed by Tim Berners-Lee in 1990. He is also known as the father of the web.
+     </p>
+     <div class="image" style="text-align: center;">
+     <a href="./assigment5-html.html" class="mybutton" target="_blank">Read More</a>
+    </div>
+</div>
+<div class="box" id="box2">
+<div class="img">
+            <img src="./assests/css-assgn6.JPG" alt="css-pic">
+        </div>
+    <h2>Introduction to CSS</h2>
+    <p>CSS stands for Cascading Style Sheets. It is a language designed to specify the overall appearance of webpages as well as the appearance and structure of the text and elements such as images and buttons on webpages and their layout</p>
+    <div class="image" style="text-align: center;">
+        <a href="./assignment5-css.html" class="mybutton" target="_blank">Read More</a>
+       </div>
+</div>
+<div class="box" id="box3">
+    <div class="img">
+        <img src="./assests/js-6.JPG" alt="js-pic">
+    </div>
+    <h2>Introduction to JavaScript</h2>
+    <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page.</p>
+    <div class="image" style="text-align: center;">
+        <a href="./assignment5-js.html" class="mybutton" target="_blank">Read More</a>
+       </div>
+</div>
+<div class="box" id="box4">
+    <div class="img">
+        <img src="./assests/bootstrap-6.JPG" alt="bootstrap-pic">
+    </div>
+    <h2>Introduction to BootStrap</h2>
+    <p> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS...</p>
+    <div class="image" style="text-align: center;">
+        <a href="./assignment5-b.html" class="mybutton" target="_blank">Read More</a>
+       </div>
+</div>
+</div>
+</body>
+</html>
