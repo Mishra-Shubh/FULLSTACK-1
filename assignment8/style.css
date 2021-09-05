@@ -264,7 +264,7 @@
             height: 85px;
             width: auto;
             margin: 5px;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             text-align: center;
             line-height: 85px;
         }
