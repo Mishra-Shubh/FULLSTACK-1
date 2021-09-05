@@ -218,7 +218,7 @@
             {
                display: inline-flex;
                width: 285px; 
-               height: 400px;
+               height: 420px;
                overflow: hidden;
                border: 2px solid black;
                margin-bottom: 10px;
@@ -246,6 +246,17 @@
                 width: 245px;
                 height: 100px;
                 border-radius: 20px;
+            }
+            .mybutton{
+                display: block;
+                margin-top: 10px;
+                text-decoration: none;
+                color: white;
+                font-family: arial;
+                background-color: red;
+                padding: 10px 20px;
+                border-radius:10px;
+    
             }
         .footer
         {
