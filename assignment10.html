@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-10</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.header
+{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.header img
+{
+    width: 110px;
+    height: 70px;
+
+}
+.header h1
+{
+    line-height: 70px;
+
+}
+.sidebar
+{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    left: -100%;
+    margin-top: 70px;
+    transition: .7s;
+}
+.sidebar ul
+{
+    list-style: none;
+
+}
+.sidebar ul li
+{
+    border-bottom: 2px solid gray;
+}
+.sidebar ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+.sidebar ul li a:hover
+{
+    border-left: 10px solid white;
+}
+a i 
+{
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+} 
+.social
+{
+    margin-top: 260px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+    border-bottom: 2px solid gray;
+    padding: 10px 15px;
+    border-top: 2px solid grey;
+}
+i{
+    font-size: 30px;
+    color: white;
+}
+
+.show-btn, .hide-btn
+{
+    font-size: 35px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: .4s;
+}
+.hide-btn
+{
+    opacity: 0;
+}
+#chk
+{
+    position: absolute;
+    visibility: hidden;  
+    z-index: -100;
+}
+#chk:checked ~.sidebar
+{
+    left: 0;
+}
+#chk:checked ~ .show-btn
+    {
+        opacity: 0;
+    }
+    #chk:checked ~ .hide-btn
+    {
+        opacity: 1;
+    }
+
+    #banner {
+        float: right;
+        transition: .7s;
+        width: 100%;
+        /* margin-top: 90px; */
+        height: 700px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 40px;
+        background-image:url(./banner.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #banner h2 {
+        margin: 20px 20px;
+        color: white;
+      }
+    
+    
+      #circle-container {
+        width: 100%;
+        margin: auto;
+      }
+    
+      #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    
+      .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+    
+      #sec2-container::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    
+      #left-side {
+        width: 50%;
+        height: 550px;
+        background-color: grey;
+        float: left;
+        color: white;
+        overflow: scroll;
+        border: 2px solid black;
+      }
+    
+      #left-p>h2 {
+        text-align: left;
+        margin: 10px 5px;
+      }
+    
+      #left-p>p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+      }
+    
+      #right-side {
+        width: 48%;
+        height: 550px;
+        float: right;
+      }
+    
+      .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+      }
+    
+      #p1 {
+        background-image: url(./project1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+      }
+    
+      #p2 {
+        background-image: url(./project2.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+      }
+    
+      #p3 {
+        background-image: url(./project3.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+      }
+      #footer {
+        background-color: black;
+        height: 70px;
+        border: 2px solid black;
+      }
+    
+      #footer>p {
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 500px)
+      {
+        .header
+        {
+          width: 100%;
+          height: 70px;
+          background-color:  black;
+          position: fixed;
+          top: 0;            
+          display: flex;
+          justify-content: center;
+         }
+      .header img
+      {
+          height: 70px;
+          width: 70px;
+          margin-right: 5px;
+      }
+      .header h2
+      {
+          display: none;           
+      }
+          .sidebar
+        {
+          width: 100%;
+          height: 100vh;
+          background-color:black ;
+          position: fixed;
+          top: 0;
+          left: -100%;
+          margin-top: 70px;
+          transition: .7s;
+        }
+      ul
+      {
+          list-style: none;
+          
+      }
+      ul li
+      {            
+          border-bottom: 2px solid red;
+      }
+      ul li a 
+      {
+          display: block;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 20px;
+      }        
+      
+      .show-btn, .hide-btn
+      {
+          position: fixed;
+          font-size: 30px;
+          color: white;
+          line-height: 70px;
+          transition: .4s;
+          top: 0px;
+          left: 20px;            
+      }
+      .hide-btn
+      {
+          opacity: 0;
+      }
+      #chk
+      {
+          position: absolute;
+          visibility: hidden;  
+           z-index: -100;
+      }
+      
+          #chk:checked ~ .sidebar
+          {
+              left: 0;
+          }
+          #chk:checked ~ .show-btn
+          {
+              opacity: 0;
+          }
+          #chk:checked ~ .hide-btn
+          {
+              opacity: 1;
+          }
+          #chk:checked ~ .content
+          {
+              width: 80%;
+          }
+          #banner {
+            width: 100%;
+            margin-top: 90px;
+            height: 250px;
+            margin-bottom: 15px;
+            display: flex;
+            font-size: 40px;
+            color: white;
+            background-image: url(./banner.jpg);
+            background-size: cover;
+            background-position: center;
+          }
+          #banner h2 {
+            margin: 10px 20px;
+            color: rgb(136, 70, 197);
+            font-size: 20px;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./logo.png" alt="">
+        <h1 style="color: white;">FULLSTACK</h1>
+    </div>
+    <input type="checkbox"  id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times" ></i>
+        </label>
+    <div class="sidebar">
+        <ul>
+            <li>
+              <a href="#top"><i class="fa fa-home"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-users"></i><span>Team</span></a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa fa-user"></i><span>About</span></a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fa fa-id-card"></i><span>Contact</span></a>
+            </li>
+          </ul>
+        <div class="social">
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-youtube-square"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+    <div id="banner">
+        <h2 style="color: black;">PRACTICAL - 10</h2>
+  
+      </div>
+      <div id="circle-container">
+        <h1 style="color: black; text-align: center;">Team Members</h1>
+        <div class="circle">
+          <img src="./male.jpg" alt="" />
+        </div>
+        <div class="circle">
+          <img src="./female.png" alt="" />
+        </div>
+        <div class="circle">
+          <img src="./male.jpg" alt="" />
+        </div>
+        <div class="circle">
+          <img src="./female.png" alt="" />
+        </div>
+      </div>
+      <div id="sec2-container">
+        <a name="about"></a>
+        <h1 style="text-align: center;">About Us</h1>
+        <div id="left-side">
+          <div class="left-content">
+            <div id="left-p">
+              <h2 style="text-align: center;">About Us</h2>
+              <p>
+                Hyper Text Markup Language (HTML) is the backbone of any website development process, without which a web page does not exist. Hypertext means that text has links, termed hyperlinks, embedded in it. When a user clicks on a word or a phrase that has a hyperlink, it will bring another web-page. A markup language indicates text can be turned into images, tables, links, and other representations. It is the HTML code that provides an overall framework of how the site will look. HTML was developed by Tim Berners-Lee.
+            </br>
+            Cascading Style Sheets (CSS) controls the presentation aspect of the site and allows your site to have its own unique look. It does this by maintaining style sheets which sit on top of other style rules and are triggered based on other inputs, such as device screen size and resolution.JavaScript is an event-based imperative programming language (as opposed to HTML's declarative language model) that is used to transform a static HTML page into a dynamic interface.
+            </p>
+            </div>
+          </div>
+        </div>
+        <div id="right-side">
+          <div class="artical" id="p1">
+            <h2>Project-1</h2>
+          </div>
+          <div class="artical" id="p2">
+            <h2>Project-2</h2>
+          </div>
+          <div class="artical" id="p3">
+            <h2>Project-3</h2>
+          </div>
+        </div>
+      </div>
+      <a name="contact"></a>
+        <h1 style="text-align: center;">Contact</h1>
+      <div id="footer">
+        <p>
+         
+           Made by Shubh Mishra&copy;
+           <br>
+          <a href="#top">Back to top</a>
+        </p>
+      </div>
+</body>
+</html>
