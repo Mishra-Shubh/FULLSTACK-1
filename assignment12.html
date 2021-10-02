@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table Practical Book</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to left , violet , skyblue);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* h1{
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+
+        } */
+        table{
+            background-color: white;
+            margin-top: 15px;
+            width: 80%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table,th,td{
+            border-collapse: collapse;
+            flex-direction: column;
+            /* border-radius: 20px; */
+
+            
+        }
+        caption{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(70, 70, 180);
+            color: white;
+            border: 1px solid rgba(168, 166, 166, 0.966);
+
+        }
+        th{
+            padding: 15px;
+            text-align: left;
+            height:50px;
+            width: auto;
+            border-bottom: 2px solid rgba(168, 166, 166, 0.966);
+        }
+        tr:hover{
+            background-color: rgba(217, 242, 250, 0.904);
+        }
+        .head:hover{
+            background-color: white;
+        }
+        .check{
+            color:green;
+        }
+        .tools{
+            color:rgba(201, 195, 195, 0.993) ;
+            border-bottom:2px solid rgba(168, 166, 166, 0.966) ;
+        }
+        .tools:hover{
+            cursor: pointer;
+            color: black;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <h1>FullStack-1 Practicals</h1> -->
+    
+    <table>
+        <caption>Fullstack Live Practical Book</caption>
+        <tr class="head">
+            <th>#</th>
+            <th>List of Practicals</th>
+            <th>Links</th>
+            <th>Status</th>
+            <th>Tools</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Create Your First Web page using:
+                HTML Editor & Online Sandbox Environment
+                Note: In the content part of the Page write "About Fullstack Web Development".</th>
+            <th> <a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment1.html" target="_blank" style="text-decoration: none;">Practical-1</a></th>
+            <th  class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th> Create a web page showing output as Html Structure using character Entities and span Tag.</th>
+            <th >  <a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment2.html" target="_blank" style="text-decoration:none;">Practical-2 </a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Live your First Web-Page on Git-Hub </th>
+            <th > <a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment3.html" target="_blank" style="text-decoration:none;">Practical-3</a></th>
+            <th  class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Create a website having list of all practical and their individual practical Page links </th>
+            <th >  <a href="https://mishra-shubh.github.io/FULLSTACK-1/index.html" target="_blank" style="text-decoration:none;">Practical-4</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Create a Web-Page showing the use of Image-Map in the Web Application.</th>
+            <th ><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment5.html" target="_blank" style="text-decoration:none;">Practical-5</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Create a Card Layout using CSS layout properties.</th>
+            <th ><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment6.html" target="_blank" style="text-decoration:none;">Practical-6</a></th>
+            <th class="check" >Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Create a Web Page Layout using div tags.</th>
+            <th ><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment7.html" target="_blank" style="text-decoration:none;">Practical-7</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>Create a Web Page having Fixed Navigation Bar with the given content.</th>
+            
+            <th ><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment8/assignment8.html" target="_blank" style="text-decoration:none;">Practical-8</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>Create a Responsive Web Layout with Responsive Navigation Bar.</th>
+            <th ><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment9.html" target="_blank" style="text-decoration:none;">Practical-9</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>Create a Responsive Side-Bar Navigation Menu.</th>
+            
+            <th><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment10.html" target="_blank" style="text-decoration:none;">Practical-10</a></th>
+            <th class="check">Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>11</th>
+            <th>Create a Responsive Footer Template.</th>
+            <th><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment11/assignment11.html" target="_blank" style="text-decoration:none;">Practical-11</a></th>
+            <th style="color: red;">Un-Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+        <tr>
+            <th>12</th>
+            <th>Create a Table that represent Live Practical Book Records .</th>
+            <th><a href="https://mishra-shubh.github.io/FULLSTACK-1/assignment11/assignment11.html" target="_blank" style="text-decoration:none;">Practical-11</a></th>
+            <th style="color: red;">Un-Checked</th>
+            <td class="tools">
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+              </td>
+        </tr>
+    </table>
+</body>
+</html>
