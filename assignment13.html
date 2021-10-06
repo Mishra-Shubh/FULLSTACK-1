@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:25px;
+        }
+        table{
+            width: 45%;
+            height: 70vh;
+        }
+        table,th,td{
+            
+            border: 1px solid white;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 8px 0px;
+        }
+        .heading{
+            height: 85px;
+            /* width: 70px; */
+            font-size: 33px;
+            color:rgb(51, 51, 141);
+            
+            
+        }
+        button{
+            background-color: rgb(51, 51, 141);
+            color: white;
+            text-align: center;
+            width: 70px;
+            height: 40px;
+            border-radius:5px;
+            
+        }
+    
+        .Basic{
+            background-color: #c1dcb7;
+        }
+        .Plus{
+            background-color: #bad6c8;
+        }
+        .Deluxe{
+            background-color: #bbd3dc;
+        }
+        .Pro{
+            background-color: #d5e4bc;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #edf3e2;
+        }
+    </style>
+</head>
+<body>
+    <table id="alter">
+        <caption style="font-weight: bolder; font-size: 20px;">Select Your Plan</caption>
+        <colgroup class="Basic"></colgroup>
+        <colgroup class="Plus"></colgroup>
+        <colgroup class="Deluxe"></colgroup>
+        <colgroup class="Pro"></colgroup>
+        <tr class="heading">
+            <th style=" background-color: #c1dcb7;"> <i class="fa fa-building"></i> Basic</th>
+            <th  style="background-color:#bad6c8 ;"> <i class="fa fa-superpowers"></i> Plus</th>
+            <th  style="background-color:#bbd3dc ;"> <i class="fa fa-telegram"></i> Deluxe</th>
+            <th style="background-color:#d5e4bc;"> <i class="fa fa-tachometer"></i> Pro</th>
+        </tr>
+        <tbody>
+        <tr style="height: 85px; font-size: 20px;">
+            <td style="color: green;" class="first-col">Rs.500/-</td>
+            <td style="color: green;">Rs.1500/-</td>
+            <td style="color: green;">Rs.2500/-</td>
+            <td style="color: green;">Rs.3500/-</td>
+        </tr>
+        <tr>
+            <td class="first-col">50 Pages</td>
+            <td>75 Pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+
+        </tr>
+        <tr>
+            <td class="first-col">3 Pages</td>
+            <td>5 Pages</td>
+            <td>10 Pages</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td class="first-col">10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td class="first-col">50 MB </td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+        </tr>
+        <tr>
+            <td class="first-col">included</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+        </tr>
+        <tr>
+            <td class="first-col"><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+        </tr>
+        <tr>
+            <td class="first-col"><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+        </tr>
+        <tr>
+            <td class="first-col"><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+        </tr>
+        <tr>
+            <td class="first-col"><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+        </tr>
+        <tr>
+            <td class="first-col"><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-close" style="color: red;" ></i></td>
+            <td><i class="fa fa-close" style="color: red;"></i></td>
+            <td><i class="fa fa-check" style="color: green;"></i></td>
+        </tr>
+        <tr>
+            <td class="first-col"><button>Sign Up</button></td>
+            <td><button>Sign Up</button></td>
+            <td><button>Sign Up</button></td>
+            <td><button>Sign Up</button></td>
+        </tbody>
+        </tr>
+    </table>
+</body>
+</html>
